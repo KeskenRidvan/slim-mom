@@ -1,0 +1,101 @@
+.right-sidebar {
+  min-height: 100%;
+  padding: 146px 56px 40px;
+  background-color: #f0f1f3;
+  background-image: url("../img/main.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  
+}
+
+.right-sidebar__summary {
+  max-width: 290px;
+  margin-bottom: 62px;
+}
+
+.right-sidebar__title {
+  margin: 0 0 20px;
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.summary-grid {
+  margin: 0;
+  display: grid;
+  row-gap: 8px;
+}
+
+.summary-grid__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 20px;
+  color: #9b9faa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.summary-grid__row dt,
+.summary-grid__row dd {
+  margin: 0;
+}
+
+.right-sidebar__foods {
+  max-width: 290px;
+}
+
+.not-recommended-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  row-gap: 8px;
+  color: #9b9faa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.right-sidebar__hint {
+  margin: 0;
+  color: #9b9faa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1279px) {
+  .right-sidebar {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 30px 34px;
+    padding: 36px var(--layout-tablet-padding) 24px;
+    background-image: url("../img/footer.png");
+    background-size: 260px auto;
+  }
+
+  .right-sidebar__summary,
+  .right-sidebar__foods {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .right-sidebar {
+    gap: 30px 18px;
+    padding: 34px var(--layout-mobile-padding) 18px;
+    background-size: 220px auto;
+  }
+}
+
+@media (max-width: 374px) {
+  .right-sidebar {
+    grid-template-columns: 1fr;
+    padding-inline: var(--layout-mobile-small-padding);
+  }
+}

@@ -1,0 +1,371 @@
+.private-page {
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 58.6% 41.4%;
+  overflow: visible;
+}
+
+.private-page__left {
+  min-height: 0;
+  padding: 58px var(--layout-desktop-padding) 34px;
+  background-color: #ffffff;
+}
+
+.private-page__left--calculator {
+  padding: 0 var(--layout-desktop-padding) 34px;
+}
+
+.private-page__left--calculator .content-wrapper {
+  width: auto;
+  margin: 0;
+  padding: 58px 0 0;
+}
+
+.private-page__left--calculator .calculator-section {
+  width: min(100%, 560px);
+}
+
+.private-page__left--calculator .title {
+  margin-bottom: 58px;
+}
+
+.diary-date-calendar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.diary-date-label {
+  margin-right: 12px;
+  color: #212121;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.diary-date-icon {
+  position: relative;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #9b9faa;
+  cursor: pointer;
+}
+
+.diary-date-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.diary-add-product-form {
+  display: grid;
+  grid-template-columns: minmax(0, 240px) 98px 48px;
+  align-items: end;
+  column-gap: 18px;
+}
+
+.diary-field {
+  position: relative;
+}
+
+.diary-field label {
+  display: block;
+  margin: 0 0 8px;
+  color: #9b9faa;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.diary-field input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 0 11px;
+  background: transparent;
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.diary-field input:focus {
+  outline: none;
+  border-bottom-color: #fc842d;
+}
+
+.diary-search-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  max-height: 188px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 10px 26px rgba(33, 33, 33, 0.12);
+  z-index: 20;
+}
+
+.diary-search-list button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 8px 12px;
+  text-align: left;
+  color: #212121;
+  cursor: pointer;
+}
+
+.diary-search-list button:hover {
+  background-color: #f7f8fa;
+}
+
+.diary-search-list button:focus-visible {
+  outline: 1px solid #fc842d;
+  outline-offset: -1px;
+}
+
+.diary-add-button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fc842d;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(252, 132, 45, 0.5);
+}
+
+.diary-add-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.diary-inline-error {
+  grid-column: 1 / -1;
+  margin: 10px 0 0;
+  color: #d64545;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.diary-products-list {
+  width: min(100%, 490px);
+  max-height: calc(100% - 160px);
+  margin: 44px 0 0;
+  padding: 0 12px 0 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.diary-products-list__item {
+  display: grid;
+  grid-template-columns: minmax(120px, 188px) 84px 84px 16px;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.diary-products-list__name,
+.diary-products-list__grams,
+.diary-products-list__calories {
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.diary-products-list__grams,
+.diary-products-list__calories {
+  text-align: right;
+}
+
+.diary-products-list__delete {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #9b9faa;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.diary-products-list__delete:hover {
+  color: #212121;
+}
+
+.diary-products-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.diary-products-list::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+}
+
+.diary-products-list::-webkit-scrollbar-thumb {
+  background-color: #264061;
+}
+
+.diary-list-empty {
+  margin: 40px 0 0;
+  color: #9b9faa;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1279px) {
+  .private-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  .private-page__left {
+    padding: 42px var(--layout-tablet-padding) 16px;
+  }
+
+  .private-page__left--calculator {
+    padding: 0 var(--layout-tablet-padding) 18px;
+  }
+
+  .private-page__left--calculator .content-wrapper {
+    padding-top: 42px;
+  }
+
+  .private-page__left--calculator .calculator-section {
+    width: min(100%, 400px);
+  }
+
+  .private-page__left--calculator .title {
+    margin-bottom: 42px;
+  }
+
+  .diary-date-calendar {
+    margin-bottom: 38px;
+  }
+
+  .diary-add-product-form {
+    grid-template-columns: minmax(0, 1fr) 90px 48px;
+    column-gap: 14px;
+  }
+
+  .diary-products-list {
+    width: 100%;
+    max-height: 205px;
+    margin-top: 34px;
+    padding-right: 8px;
+  }
+
+  .diary-products-list__item {
+    grid-template-columns: minmax(0, 1fr) 70px 76px 16px;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .private-page__left {
+    padding: 34px var(--layout-mobile-padding) 14px;
+  }
+
+  .private-page__left--calculator {
+    padding: 0 var(--layout-mobile-padding) 14px;
+  }
+
+  .private-page__left--calculator .content-wrapper {
+    padding-top: 36px;
+  }
+
+  .private-page__left--calculator .calculator-section {
+    width: min(100%, 360px);
+  }
+
+  .diary-date-calendar {
+    margin-bottom: 30px;
+  }
+
+  .diary-date-label {
+    font-size: 34px;
+  }
+
+  .diary-add-product-form {
+    grid-template-columns: minmax(0, 1fr) 88px 48px;
+    column-gap: 10px;
+  }
+
+  .diary-field label {
+    font-size: 14px;
+  }
+
+  .diary-products-list {
+    max-height: 188px;
+    margin-top: 24px;
+    padding-right: 6px;
+  }
+
+  .diary-products-list__item {
+    grid-template-columns: minmax(0, 1fr) 56px 74px 14px;
+    column-gap: 8px;
+  }
+
+  .diary-products-list__name,
+  .diary-products-list__grams,
+  .diary-products-list__calories {
+    font-size: 14px;
+  }
+
+  .diary-products-list__delete {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 374px) {
+  .private-page__left,
+  .private-page__left--calculator {
+    padding-inline: var(--layout-mobile-small-padding);
+  }
+
+  .diary-date-label {
+    font-size: 28px;
+  }
+
+  .diary-add-product-form {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .diary-add-button {
+    justify-self: flex-start;
+  }
+
+  .diary-products-list__item {
+    grid-template-columns: minmax(0, 1fr) 48px 64px 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .diary-date-label {
+    font-size: 24px;
+  }
+
+  .diary-products-list__name,
+  .diary-products-list__grams,
+  .diary-products-list__calories {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,54 @@
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  html {
+    height: -webkit-fill-available;
+  }
+
+  body,
+  #root {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-wrapper picture {
+  display: block;
+}
+
+.logo-image {
+  display: block;
+  width: 167px;
+  height: auto;
+  position: relative;
+  top: -15px;
+}
+
+@media (max-width: 1279px) {
+  .logo-image {
+    width: 163px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-image {
+    width: 120px;
+    top: 5px;
+  }
+}

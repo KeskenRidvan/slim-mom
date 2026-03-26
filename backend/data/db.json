@@ -1,0 +1,428 @@
+{
+  "users": [
+    {
+      "id": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "name": "Ã¶mer",
+      "email": "cprookie0@gmail.com",
+      "passwordHash": "$2a$10$otsjNxLVhDfxelYFTajeCeLRsSEueWygz5AZZTri31qgjxhMOSH7S",
+      "bloodType": 2,
+      "dailyRate": 2477,
+      "notRecommendedFoods": [
+        "Pork",
+        "Lentils",
+        "Corn",
+        "Buckwheat"
+      ],
+      "diaries": {
+        "19.02.2026": [
+          {
+            "id": "6c90a4f1-56f6-48d6-a79c-87293024d628",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 50,
+            "calories": 45,
+            "createdAt": "2026-02-19T18:23:48.298Z"
+          },
+          {
+            "id": "b537833a-bdc5-4550-9cc3-ed9dbdbfb1d9",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 500,
+            "calories": 260,
+            "createdAt": "2026-02-19T18:23:58.791Z"
+          }
+        ],
+        "22.02.2026": [
+          {
+            "id": "98bc42c5-9e20-4ada-8c46-99d6cf157973",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 15,
+            "calories": 8,
+            "createdAt": "2026-02-22T19:05:41.724Z"
+          },
+          {
+            "id": "3748ba4e-4652-419a-8e33-fa9f4bed7c20",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 20,
+            "calories": 18,
+            "createdAt": "2026-02-22T19:05:57.776Z"
+          },
+          {
+            "id": "5d714e9a-358c-435b-80fe-1f90d562d9fd",
+            "productId": "p3",
+            "name": "Bread",
+            "grams": 100,
+            "calories": 210,
+            "createdAt": "2026-02-22T19:16:06.968Z"
+          }
+        ],
+        "24.02.2026": [
+          {
+            "id": "d5d0c1c1-60d1-4873-9eae-4fdd311ce1c2",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 15,
+            "calories": 8,
+            "createdAt": "2026-02-24T15:04:57.685Z"
+          },
+          {
+            "id": "472b2e6b-2822-4fce-ae6f-7177c0fc6376",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 20,
+            "calories": 18,
+            "createdAt": "2026-02-24T15:05:07.696Z"
+          },
+          {
+            "id": "ad5f9602-0477-4b55-80e5-0e3c4603b166",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 15,
+            "calories": 8,
+            "createdAt": "2026-02-24T15:05:14.167Z"
+          },
+          {
+            "id": "8ef75a24-a5f6-4e01-ad0b-49d11286a05f",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 20,
+            "calories": 10,
+            "createdAt": "2026-02-24T15:05:17.899Z"
+          },
+          {
+            "id": "4343e20f-c8a5-4ea0-8383-551a41173b11",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 20,
+            "calories": 18,
+            "createdAt": "2026-02-24T15:05:23.123Z"
+          },
+          {
+            "id": "5ad33544-e177-4ca5-a3fd-8e33cb948d91",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 20,
+            "calories": 18,
+            "createdAt": "2026-02-24T15:05:28.709Z"
+          },
+          {
+            "id": "b829c4b9-90ac-44c4-b615-84bb8b81d71c",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 20,
+            "calories": 10,
+            "createdAt": "2026-02-24T15:05:32.627Z"
+          },
+          {
+            "id": "6adf09bf-f30f-4176-8c45-a224073c64da",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 20,
+            "calories": 10,
+            "createdAt": "2026-02-24T15:05:38.728Z"
+          },
+          {
+            "id": "41a9cd61-24ef-4b43-9c93-e9e1c0fdbbd2",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 15,
+            "calories": 8,
+            "createdAt": "2026-02-24T15:05:43.627Z"
+          },
+          {
+            "id": "54654920-fb93-4086-aa41-74b7c9edda8d",
+            "productId": "p9",
+            "name": "Banana",
+            "grams": 15,
+            "calories": 13,
+            "createdAt": "2026-02-24T15:05:49.368Z"
+          },
+          {
+            "id": "10f78107-65f4-42a1-a0aa-59fcaa8069c0",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 10,
+            "calories": 5,
+            "createdAt": "2026-02-24T15:05:54.930Z"
+          },
+          {
+            "id": "d9020030-49cb-4a62-bf64-0f909e1ebc00",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 20,
+            "calories": 10,
+            "createdAt": "2026-02-24T15:06:00.496Z"
+          },
+          {
+            "id": "2e8b4edf-e17a-4fe9-bb16-751473744d05",
+            "productId": "p20",
+            "name": "Apple",
+            "grams": 55,
+            "calories": 29,
+            "createdAt": "2026-02-24T15:06:10.362Z"
+          }
+        ]
+      },
+      "createdAt": "2026-02-18T20:34:47.397Z",
+      "profile": {
+        "height": 170,
+        "age": 25,
+        "currentWeight": 70,
+        "desiredWeight": 170
+      }
+    },
+    {
+      "id": "3db8e764-cac4-4f06-9e0b-3e74adf78cac",
+      "name": "Emre",
+      "email": "emre@test.com",
+      "passwordHash": "$2a$10$05TGT.CDZajwkB8meOBQo.ucuu960Upbi7TBpgASLbKoKM358o.2S",
+      "createdAt": "2026-02-20T18:33:27.170Z"
+    },
+    {
+      "id": "7c48045a-1e2a-4a02-bcc9-c9b35c0460e8",
+      "name": "emre",
+      "email": "emrern268@gmail.com",
+      "passwordHash": "$2a$10$F9ur5OY5dSKyOX3C57rRieMMR1U7HLt0IRw23ri3jaJW0MBR8FkM.",
+      "createdAt": "2026-02-20T20:45:07.373Z"
+    },
+    {
+      "id": "acac2a71-10ff-4e92-a0d3-ead3235a5226",
+      "name": "emre",
+      "email": "plsemre@outlook.com",
+      "passwordHash": "$2a$10$4fZu70mDVdYKbhP/A4RsUuhMYJUrxOpIipX91fDa4fPzzx77wFP1C",
+      "createdAt": "2026-02-20T20:45:22.644Z"
+    },
+    {
+      "id": "bc072167-0703-463b-8c98-6e12b4585fe0",
+      "name": "emre",
+      "email": "emrern2@gmail.com",
+      "passwordHash": "$2a$10$XVKFhpb0kwyhp9K.WIjUM.tpCWboc6JDLloAC.mDJS/hn1tRdocD2",
+      "createdAt": "2026-02-20T20:51:51.931Z"
+    },
+    {
+      "id": "d61b3dc2-f7a9-4f7a-afd6-fbdc34e777d8",
+      "name": "emre",
+      "email": "dasd@asd.com",
+      "passwordHash": "$2a$10$vrKay29yKijB.EkhsyXGWO0H.ip6XfbjnXbiE4p.zWl9xDG5Trk0S",
+      "createdAt": "2026-02-20T20:58:57.123Z"
+    },
+    {
+      "id": "efbca678-d4ba-4f24-a924-29748b2075d0",
+      "name": "asdasd",
+      "email": "asdasd@gasda.com",
+      "passwordHash": "$2a$10$98rsk.goYmuAqVeUvkIa6OdnFyOpdJDizVLQI6G/sgXhIUP6psILO",
+      "createdAt": "2026-02-20T20:59:10.929Z"
+    },
+    {
+      "id": "5bd42b65-2f05-4de6-8f07-e19a533a77bb",
+      "name": "ssss",
+      "email": "trtrt@gmail.com",
+      "passwordHash": "$2a$10$NmXrWEsA2ajobGwTrw.rUOLc3M.P4adMWfzCLyEsxXR23MgB1ImSC",
+      "createdAt": "2026-02-20T21:19:42.453Z"
+    },
+    {
+      "id": "c794694c-fbd6-4019-897e-d17ef470699b",
+      "name": "w4trwer",
+      "email": "asdadsad@gasd.asd",
+      "passwordHash": "$2a$10$.Q24p36xGaMSKMf4u91iROOeWWAVLXKiEH4pZEUuA.6YrLU9lgisa",
+      "createdAt": "2026-02-20T21:23:17.898Z"
+    },
+    {
+      "id": "32b4f7fe-1351-4efc-8ee6-ae158476d18b",
+      "name": "asd",
+      "email": "asd@gmail.com",
+      "passwordHash": "$2a$10$xHTgG6zBIktAKdOQPCqB9OpsS/fKMS13EpU24FEk/xDZRuEblO/..",
+      "createdAt": "2026-02-24T08:29:06.361Z",
+      "diaries": {
+        "24.02.2026": [],
+        "17.02.2026": []
+      }
+    },
+    {
+      "id": "9fa3093f-d0b0-4239-a34c-edb04bab4c0f",
+      "name": "Codex User",
+      "email": "codex_1774376913739@example.com",
+      "passwordHash": "$2a$10$JFhd2hoAKVATl1us84CxBu0R64kNhqhUIrATpHSx9z/oEkn6MM1Jy",
+      "createdAt": "2026-03-24T18:28:33.823Z",
+      "profile": {
+        "height": 170,
+        "age": 30,
+        "currentWeight": 70,
+        "desiredWeight": 60
+      },
+      "bloodType": 2,
+      "dailyRate": 1352,
+      "notRecommendedFoods": [
+        "Pork",
+        "Lentils",
+        "Corn",
+        "Buckwheat"
+      ],
+      "diaries": {
+        "24.03.2026": []
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "id": "a8970ef2-1ab7-4c04-bb73-b3dc7e81b094",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiJhODk3MGVmMi0xYWI3LTRjMDQtYmI3My1iM2RjN2U4MWIwOTQiLCJpYXQiOjE3NzE1Mjk2MTcsImV4cCI6MTc3MTUzMDUxN30.by6gqhw1Y19FRvopzzKG4jHbeMD3uEraNaSN49SHJVA",
+      "refreshToken": "d9d8a777-1631-479b-a226-b53ca82588ff",
+      "createdAt": "2026-02-19T19:33:37.715Z",
+      "refreshExpiresAt": "2026-03-05T19:33:37.715Z"
+    },
+    {
+      "id": "f8c2b105-0afc-4554-92f0-c3d30895843e",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiJmOGMyYjEwNS0wYWZjLTQ1NTQtOTJmMC1jM2QzMDg5NTg0M2UiLCJpYXQiOjE3NzE3ODE3OTUsImV4cCI6MTc3MTc4MjY5NX0.Mso1k4ednAKNwYf5LKa9wZ6FKePL1cOVzPjEzOX8Ewo",
+      "refreshToken": "1409a7e4-7385-4aaf-b832-31789914a3eb",
+      "createdAt": "2026-02-22T17:36:35.348Z",
+      "refreshExpiresAt": "2026-03-08T17:36:35.348Z"
+    },
+    {
+      "id": "ce4226fc-f61e-4b51-8e9e-04815bad3358",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiJjZTQyMjZmYy1mNjFlLTRiNTEtOGU5ZS0wNDgxNWJhZDMzNTgiLCJpYXQiOjE3NzE4NjQ0MTIsImV4cCI6MTc3MTg2NTMxMn0.vPtgA6cfC5xzCstoXKD98hT1QAoA3vk_M-cbAXIiv5o",
+      "refreshToken": "40967edb-2f63-495a-94a4-b83131643508",
+      "createdAt": "2026-02-22T19:05:29.008Z",
+      "refreshExpiresAt": "2026-03-09T16:33:32.620Z"
+    },
+    {
+      "id": "858c6183-1671-4209-9c53-eabc03b45d49",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiI4NThjNjE4My0xNjcxLTQyMDktOWM1My1lYWJjMDNiNDVkNDkiLCJpYXQiOjE3NzE5NjA5MjksImV4cCI6MTc3MTk2MTgyOX0.KiFGzwBunOhhz0rqJQ9fYatx9LpQzd0W52GtDIhhtyY",
+      "refreshToken": "a653497e-961b-488a-b2f0-be646f2bb1ad",
+      "createdAt": "2026-02-24T17:22:12.524Z",
+      "refreshExpiresAt": "2026-03-10T19:22:09.137Z"
+    },
+    {
+      "id": "ffb5cf79-dbd7-48d4-b8f1-c2103dc5d8ec",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiJmZmI1Y2Y3OS1kYmQ3LTQ4ZDQtYjhmMS1jMjEwM2RjNWQ4ZWMiLCJpYXQiOjE3NzE5NjIzMzIsImV4cCI6MTc3MTk2MzIzMn0.6aSdzWGwzLEY2qlCVf6h2-Xf7dSKlao-wyos6DXS36U",
+      "refreshToken": "29cc41cb-af08-48df-9601-e6bd063333bc",
+      "createdAt": "2026-02-24T19:22:11.012Z",
+      "refreshExpiresAt": "2026-03-10T19:45:32.396Z"
+    },
+    {
+      "id": "a0611c88-30c9-4dbd-82c2-059fca8b1989",
+      "userId": "0d798754-6321-4d38-a2d9-efbf25dd270f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwZDc5ODc1NC02MzIxLTRkMzgtYTJkOS1lZmJmMjVkZDI3MGYiLCJzaWQiOiJhMDYxMWM4OC0zMGM5LTRkYmQtODJjMi0wNTlmY2E4YjE5ODkiLCJpYXQiOjE3NzIwMzgyNjAsImV4cCI6MTc3MjAzOTE2MH0.P98aRl3JOO7ai7MK1c7jk3qJy4Vzs2q54tSXsyGU3Rg",
+      "refreshToken": "0d2848d4-f269-4bd5-98ab-fcd7d7b78d7c",
+      "createdAt": "2026-02-25T16:51:00.996Z",
+      "refreshExpiresAt": "2026-03-11T16:51:00.996Z"
+    },
+    {
+      "id": "05b3edcd-9a54-487c-96f1-7cfc30da02a4",
+      "userId": "9fa3093f-d0b0-4239-a34c-edb04bab4c0f",
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI5ZmEzMDkzZi1kMGIwLTQyMzktYTM0Yy1lZGIwNGJhYjRjMGYiLCJzaWQiOiIwNWIzZWRjZC05YTU0LTQ4N2MtOTZmMS03Y2ZjMzBkYTAyYTQiLCJpYXQiOjE3NzQzNzY5MTMsImV4cCI6MTc3NDM3NzgxM30.unDVW5y4P-2uGGPpJfzZWdKTduxYkBHR89sEBdQdOz8",
+      "refreshToken": "cd2a0d47-adbb-4d30-b3b6-69104f69af59",
+      "createdAt": "2026-03-24T18:28:33.826Z",
+      "refreshExpiresAt": "2026-04-07T18:28:33.826Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Eggplant",
+      "caloriesPer100g": 24
+    },
+    {
+      "id": "p2",
+      "name": "Poultry meat",
+      "caloriesPer100g": 240
+    },
+    {
+      "id": "p3",
+      "name": "Bread",
+      "caloriesPer100g": 210
+    },
+    {
+      "id": "p4",
+      "name": "Nut",
+      "caloriesPer100g": 205
+    },
+    {
+      "id": "p5",
+      "name": "Pork meat",
+      "caloriesPer100g": 580
+    },
+    {
+      "id": "p6",
+      "name": "Potato",
+      "caloriesPer100g": 77
+    },
+    {
+      "id": "p7",
+      "name": "Milk",
+      "caloriesPer100g": 52
+    },
+    {
+      "id": "p8",
+      "name": "Smoked meat",
+      "caloriesPer100g": 310
+    },
+    {
+      "id": "p9",
+      "name": "Banana",
+      "caloriesPer100g": 89
+    },
+    {
+      "id": "p10",
+      "name": "Beef",
+      "caloriesPer100g": 250
+    },
+    {
+      "id": "p11",
+      "name": "Corn",
+      "caloriesPer100g": 86
+    },
+    {
+      "id": "p12",
+      "name": "Buckwheat",
+      "caloriesPer100g": 343
+    },
+    {
+      "id": "p13",
+      "name": "Chicken",
+      "caloriesPer100g": 239
+    },
+    {
+      "id": "p14",
+      "name": "Lentils",
+      "caloriesPer100g": 116
+    },
+    {
+      "id": "p15",
+      "name": "Seafood",
+      "caloriesPer100g": 99
+    },
+    {
+      "id": "p16",
+      "name": "Flour products",
+      "caloriesPer100g": 364
+    },
+    {
+      "id": "p17",
+      "name": "Red meat",
+      "caloriesPer100g": 288
+    },
+    {
+      "id": "p18",
+      "name": "Olives",
+      "caloriesPer100g": 115
+    },
+    {
+      "id": "p19",
+      "name": "Pomegranate",
+      "caloriesPer100g": 83
+    },
+    {
+      "id": "p20",
+      "name": "Apple",
+      "caloriesPer100g": 52
+    }
+  ]
+}

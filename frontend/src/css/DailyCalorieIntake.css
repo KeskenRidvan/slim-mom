@@ -1,0 +1,106 @@
+.daily-calorie-intake {
+  text-align: center;
+  color: #212121;
+}
+
+.intake-title {
+  max-width: 360px;
+  margin: 0 auto 26px;
+  color: #212121;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.intake-rate {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 38px;
+}
+
+.calorie-number {
+  color: #264061;
+  font-size: 88px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.calorie-unit {
+  margin-bottom: 12px;
+  color: #264061;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.forbidden-foods {
+  max-width: 360px;
+  margin: 0 auto 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.forbidden-title {
+  margin: 0 0 14px;
+  color: #212121;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #9b9faa;
+}
+
+.food-item {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.intake-button {
+  width: 210px;
+  height: 44px;
+  border: 0;
+  border-radius: 30px;
+  background-color: #fc842d;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(252, 132, 45, 0.5);
+}
+
+.intake-button:hover {
+  filter: brightness(0.97);
+}
+
+@media (max-width: 767px) {
+  .intake-title {
+    max-width: 280px;
+    font-size: 24px;
+  }
+
+  .calorie-number {
+    font-size: 60px;
+  }
+
+  .calorie-unit {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .forbidden-title {
+    font-size: 18px;
+  }
+
+  .food-item {
+    font-size: 14px;
+  }
+}
