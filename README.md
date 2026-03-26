@@ -1,29 +1,27 @@
-# Slim Mom
+# Slim Mom 🥗
 
-Tam yığın bir kalori takip uygulaması. Proje iki parçadan oluşur:
+A full-stack calorie tracking application built with React and Node.js. The app helps users calculate their daily calorie target, manage authentication, and keep a simple food diary for each day.
 
-- `frontend`: React + Vite arayüzü
-- `backend`: Express tabanlı REST API
+## Live Links
 
-Uygulama günlük kalori ihtiyacını hesaplar, kullanıcı oturumu yönetir, ürün araması yapar ve günlük tüketilen ürünleri diary ekranında saklar.
+- Frontend: [https://slim-mom-green.vercel.app/](https://slim-mom-green.vercel.app/)
+- Backend API Docs: [https://slim-mom-ii3s.onrender.com/api/docs/](https://slim-mom-ii3s.onrender.com/api/docs/)
 
-## Öne Çıkanlar
+## What This Project Does
 
-- Public ve private günlük kalori hesabı
-- Kayıt ol, giriş yap, çıkış yap, refresh token akışı
-- Korumalı route yapısı
-- Ürün arama endpoint’i
-- Gün bazlı öğün ekleme, listeleme ve silme
-- Swagger dokümantasyonu
-- `1440 / 1280 / 768 / 375 / 320` kırılımlarına göre responsive düzen
-- Vercel frontend ve Render backend yayını için hazır yapı
+- Calculates daily calorie needs
+- Supports public and private calorie calculation flows
+- Handles registration, login, logout, and token refresh
+- Lets authenticated users search products
+- Lets authenticated users add, list, and remove meals by date
+- Includes Swagger documentation for backend endpoints
 
-## Kullanılan Yapı
+## Tech Stack
 
-### Frontend
+### Frontend 🎨
 
 - React 18
-- Vite 5
+- Vite
 - React Router DOM
 - Redux Toolkit
 - React Hook Form
@@ -32,7 +30,7 @@ Uygulama günlük kalori ihtiyacını hesaplar, kullanıcı oturumu yönetir, ü
 - React Datepicker
 - modern-normalize
 
-### Backend
+### Backend ⚙️
 
 - Node.js
 - Express
@@ -42,11 +40,11 @@ Uygulama günlük kalori ihtiyacını hesaplar, kullanıcı oturumu yönetir, ü
 - swagger-ui-express
 - dotenv
 
-### Veri Saklama
+### Data Layer
 
-- JSON tabanlı dosya: `backend/data/db.json`
+- JSON-based storage with `backend/data/db.json`
 
-## Klasör Düzeni
+## Project Structure
 
 ```text
 .
@@ -77,46 +75,128 @@ Uygulama günlük kalori ihtiyacını hesaplar, kullanıcı oturumu yönetir, ü
 └── package.json
 ```
 
-## Yerel Kurulum
+## Main Features
 
-### Gereksinimler
+### Authentication
+
+- User registration
+- User login
+- Logout flow
+- Refresh token flow
+
+### Calories
+
+- Public calorie calculation
+- Private calorie calculation with saved user data
+- Daily rate and restricted food suggestions
+
+### Diary
+
+- Search products
+- Add meals for a selected date
+- List meals by date
+- Delete meals from the diary
+
+## Routing
+
+### Public Pages
+
+- `/`
+- `/login`
+- `/registration`
+
+### Private Pages
+
+- `/calculator`
+- `/diary`
+
+Unauthenticated users are redirected to the login page when trying to access protected routes.
+
+## Responsive Layout 📱
+
+The interface is organized around a max-width desktop shell and adapted for these breakpoints:
+
+- `1440px`
+- `1280px`
+- `768px`
+- `375px`
+- `320px`
+
+Public pages, auth screens, and private pages were adjusted for these widths.
+
+## API Overview
+
+Base path:
+
+```text
+/api
+```
+
+### Auth Endpoints
+
+- `POST /auth/register`
+- `POST /auth/signin`
+- `POST /auth/login`
+- `POST /auth/refresh`
+- `POST /auth/logout`
+
+### Daily Rate Endpoints
+
+- `POST /public/daily-rate`
+- `POST /private/daily-rate`
+
+### Products
+
+- `GET /products?search=<query>`
+
+### Meals
+
+- `POST /meals`
+- `GET /meals?userId=<id>&date=DD.MM.YYYY`
+- `DELETE /meals/:mealId?userId=<id>&date=DD.MM.YYYY`
+
+## Local Setup
+
+### Requirements
 
 - Node.js 18+
 - npm 9+
 
-### Adımlar
-
-1. Bağımlılıkları yükle:
+### Install
 
 ```bash
 npm run install:all
 ```
 
-2. Backend ve frontend için ortam dosyalarını oluştur:
+### Create Environment Files
 
 ```bash
 cp backend/.env.example backend/.env
 cp frontend/.env.template frontend/.env
 ```
 
-3. Geliştirme ortamını iki ayrı terminalde başlat:
+### Start the Project
+
+Backend:
 
 ```bash
 npm run dev:backend
 ```
 
+Frontend:
+
 ```bash
 npm run dev:frontend
 ```
 
-### Varsayılan adresler
+### Default Local URLs
 
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:4000`
 - Swagger: `http://localhost:4000/api/docs`
-- Health check: `http://localhost:4000/health`
+- Health Check: `http://localhost:4000/health`
 
-## Ortam Değişkenleri
+## Environment Variables
 
 ### Frontend
 
@@ -141,13 +221,40 @@ CORS_ORIGINS=http://localhost:5173,https://your-app.vercel.app,https://*.vercel.
 SERVER_PUBLIC_URL=http://localhost:4000
 ```
 
-### Açıklama
+## Deployment 🌍
 
-- `FRONTEND_URL`: backend’in temel frontend adresi
-- `CORS_ORIGINS`: izin verilen origin listesi
-- `SERVER_PUBLIC_URL`: Swagger ve production erişimi için backend public adresi
+### Frontend on Vercel
 
-## Scriptler
+Production frontend:
+
+- [https://slim-mom-green.vercel.app/](https://slim-mom-green.vercel.app/)
+
+Recommended environment variable:
+
+```env
+VITE_API_BASE=https://slim-mom-ii3s.onrender.com/api
+```
+
+### Backend on Render
+
+Production backend docs:
+
+- [https://slim-mom-ii3s.onrender.com/api/docs/](https://slim-mom-ii3s.onrender.com/api/docs/)
+
+Recommended production values:
+
+```env
+PORT=4000
+ACCESS_TOKEN_SECRET=your-strong-secret
+REFRESH_TOKEN_SECRET=your-other-strong-secret
+ACCESS_TOKEN_TTL=15m
+REFRESH_TOKEN_TTL_DAYS=14
+FRONTEND_URL=https://slim-mom-green.vercel.app
+CORS_ORIGINS=https://slim-mom-green.vercel.app,https://*.vercel.app
+SERVER_PUBLIC_URL=https://slim-mom-ii3s.onrender.com
+```
+
+## Available Scripts
 
 ### Root
 
@@ -168,91 +275,9 @@ SERVER_PUBLIC_URL=http://localhost:4000
 - `npm run build`
 - `npm run preview`
 
-## API Uç Noktaları
+## Notes 📝
 
-Base path: `/api`
-
-### Auth
-
-- `POST /auth/register`
-- `POST /auth/signin`
-- `POST /auth/login`
-- `POST /auth/refresh`
-- `POST /auth/logout`
-
-### Daily Rate
-
-- `POST /public/daily-rate`
-- `POST /private/daily-rate`
-
-### Products
-
-- `GET /products?search=<query>`
-
-### Meals
-
-- `POST /meals`
-- `GET /meals?userId=<id>&date=DD.MM.YYYY`
-- `DELETE /meals/:mealId?userId=<id>&date=DD.MM.YYYY`
-
-## Arayüz Yapısı
-
-Public sayfalar:
-
-- `/`
-- `/login`
-- `/registration`
-
-Private sayfalar:
-
-- `/calculator`
-- `/diary`
-
-Oturum yoksa private route’lar giriş ekranına yönlendirilir.
-
-## Responsive Notları
-
-Arayüz maksimum `1440px` kapsayıcı ile düzenlenmiştir. Çalışılan ana kırılımlar:
-
-- `1280px`
-- `768px`
-- `375px`
-- `320px`
-
-Public, auth ve private sayfalar bu genişliklere göre yeniden hizalanmıştır.
-
-## Dağıtım
-
-### Frontend: Vercel
-
-`frontend/vercel.json` dosyası SPA rewrite ayarı içerir. Vercel üzerinde `frontend` klasörünü root directory olarak seçebilirsin.
-
-Vercel environment variable:
-
-```env
-VITE_API_BASE=https://your-render-service.onrender.com/api
-```
-
-### Backend: Render
-
-`render.yaml` dosyası temel web service tanımı içerir. Render tarafında environment variable’ları panelden girmen gerekir.
-
-Örnek production değerleri:
-
-```env
-PORT=4000
-ACCESS_TOKEN_SECRET=strong-secret
-REFRESH_TOKEN_SECRET=another-strong-secret
-ACCESS_TOKEN_TTL=15m
-REFRESH_TOKEN_TTL_DAYS=14
-FRONTEND_URL=https://your-app.vercel.app
-CORS_ORIGINS=https://your-app.vercel.app,https://*.vercel.app
-SERVER_PUBLIC_URL=https://your-render-service.onrender.com
-```
-
-## Ek Notlar
-
-- Bu proje veritabanı yerine JSON dosyası kullanır.
-- `backend/data/db.json` geliştirme için uygundur, yoğun production kullanımına uygun değildir.
-- Ürün arama isteği başarısız olursa frontend tarafında yedek ürün listesi devreye girer.
-- Swagger arayüzü backend ayağa kalktığında aktif olur.
+- This project uses a JSON file instead of a real database.
+- The current storage approach is fine for learning and demo purposes, but not for heavy production use.
+- If the product search request fails, the frontend falls back to a local product list.
+- Swagger is available when the backend service is running.
